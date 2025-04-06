@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+#selborder
+{
+	background-image: url(../images/selector/border.png);
+	height: 607;
+	width: 1001px;
+	top: 0px;
+	left: 10px;
+}
+
+#selpanel
+{
+	background-image: url(../images/selector/panel.png);
+	top: 36px;
+	left: 52px;
+	height: 540px;
+	width: 919px;
+}
+
+#mastery0
+{
+	top: 34px;
+	left: 90px;
+}
+
+#mastery1
+{
+	top: 34px;
+	left: 300px;
+}

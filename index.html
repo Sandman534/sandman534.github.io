@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>Titan Quest AE Skill Calculator</title>
+		<link rel="stylesheet" type="text/css" href="css/document.css" />
+		<link rel="stylesheet" type="text/css" href="css/selector.css" />
+		<link rel="stylesheet" type="text/css" href="css/skill.css" />
+
+		<script type="text/javascript" src="js/masteries/defense.js"></script>
+		<script type="text/javascript" src="js/masteries/dream.js"></script>
+		<script type="text/javascript" src="js/masteries/earth.js"></script>
+		<script type="text/javascript" src="js/masteries/hunting.js"></script>
+		<script type="text/javascript" src="js/masteries/nature.js"></script>
+		<script type="text/javascript" src="js/masteries/rune.js"></script>
+		<script type="text/javascript" src="js/masteries/rogue.js"></script>
+		<script type="text/javascript" src="js/masteries/spirit.js"></script>
+		<script type="text/javascript" src="js/masteries/storm.js"></script>
+		<script type="text/javascript" src="js/masteries/warfare.js"></script>
+		<script type="text/javascript" src="js/masteries/neidan.js"></script>
+		
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+
+	<body onload="main();" oncontextmenu="return false">
+		<div id="topmatter">
+			<table style="margin-left: auto; margin-right: auto;">
+				<tr><td colspan="6" align="center"><font size="6">Titan Quest AE Skill Calculator</font></td></tr>
+				<tr>
+					<td align="center"><a href="#" onclick="backup();" class="button">Backup</a></td>
+					<td colspan="3"><textarea id="config"></textarea></td>
+					<td align="center"><a href="#" onclick="restore();" class="button">Restore</a></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="mainmatter">
+			<div id="classmatter">
+				<span id = "class" class="classname"></span>
+			</div>
+			<br>
+			<div id="selector" class="wrap" style="left: -50px; display: none;">
+				<div id="selborder" class="abs z0"></div>
+				<div id="mastery1" class="abs z3"></div>
+
+				<div id="selpanel" class="abs ">
+					<div class="abs z2" id="highlighted" style="background-image: url('images/selector/highlight/none.png'); width: 226px; height: 226px; top: 44px; left: 348px;"></div>
+				</div>
+
+				<div id="sellabel" class="abs z3">
+					<div class="abs z3 flex" id="highlighted_label" style="top: 330px; left: 388px; width: 248px; height: 108px;"></div>
+				</div>
+			</div>
+
+			<div id="m0w" class="wrap" style="display: none;">
+				<div id="m0" class="panel"></div>
+				<div id="m0point" class="abs point" onmouseup="MasteryPointMouseHandler(0, event);" onmousedown="MasteryPointClickHandler(0, event);" onmouseover="MasteryPointPopup(0, event);" onmouseout="MasteryHidePop(0, event);"></div>
+				<div id="m0bar" class="abs bar"></div>
+				<div id="m0pcnt" class="abs pcnt"></div>
+			</div>
+			<br>
+			<div id="m1w" class="wrap" style="display: none;">
+				<div id="m1" class="panel"></div>
+				<div id="m1point" class="abs point" onmouseup="MasteryPointMouseHandler(1, event);" onmousedown="MasteryPointClickHandler(1, event);" onmouseover="MasteryPointPopup(1, event);" onmouseout="MasteryHidePop(1, event);"></div>
+				<div id="m1bar" class="abs bar"></div>
+				<div id="m1pcnt" class="abs pcnt"></div>
+				<div id="m1pcnt" class="abs pcnt"></div>
+
+			</div>
+		</div>
+		<div id="pop" style="display: block; visibility: hidden;"></div>
+
+		<img class="hidden" src="images/selector/disabled/storm.png" />
+		<img class="hidden" src="images/selector/disabled/earth.png" />
+		<img class="hidden" src="images/selector/disabled/warfare.png" />
+		<img class="hidden" src="images/selector/disabled/spirit.png" />
+		<img class="hidden" src="images/selector/disabled/rogue.png" />
+		<img class="hidden" src="images/selector/disabled/dream.png" />
+		<img class="hidden" src="images/selector/disabled/hunting.png" />
+		<img class="hidden" src="images/selector/disabled/nature.png" />
+		<img class="hidden" src="images/selector/disabled/defense.png" />
+
+		<img class="hidden" src="images/skill/panel/storm.png" />
+		<img class="hidden" src="images/skill/panel/earth.png" />
+		<img class="hidden" src="images/skill/panel/warfare.png" />
+		<img class="hidden" src="images/skill/panel/spirit.png" />
+		<img class="hidden" src="images/skill/panel/rogue.png" />
+		<img class="hidden" src="images/skill/panel/dream.png" />
+		<img class="hidden" src="images/skill/panel/hunting.png" />
+		<img class="hidden" src="images/skill/panel/nature.png" />
+		<img class="hidden" src="images/skill/panel/defense.png" />
+	</body>
+</html>
